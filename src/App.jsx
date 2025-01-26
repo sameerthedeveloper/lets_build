@@ -1,7 +1,7 @@
 import './App.css'
 import Course from '../src/components/courses'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { HashRouter as Router, Route, Routes } from 'react-router-dom'
+import { HashRouter as Router, Routes, BrowserRouter } from 'react-router-dom'
 
 
 
@@ -42,9 +42,9 @@ function App() {
 
   return (
     <>
-    <Router>
-      <Routes>
-        <Route path='/home' element={
+    <BrowserRouter basename='/letsbuild'>
+
+
           <div>
           <div className="container w-100 d-flex justify-content-center align-items-center flex-column mx-auto">
             <h1 className='h1 mx-auto fw-bolder text-primary mt-5'>Let&apos;s Build</h1>
@@ -55,9 +55,9 @@ function App() {
               <Course key={course.id} title={course.title} link={course.link}/>
             ))}
             </div>
-        } />
-      </Routes>
-    </Router>
+
+
+    </BrowserRouter>
 
   
 
