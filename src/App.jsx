@@ -1,7 +1,7 @@
 import './App.css'
 import Course from '../src/components/courses'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { BrowserRouter } from 'react-router-dom'
+import {  HashRouter } from 'react-router-dom'
 
 
 
@@ -42,7 +42,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter basename='/letsbuild'>
+    <HashRouter basename='/letsbuild'>
 
 
           <div>
@@ -57,7 +57,7 @@ function App() {
             </div>
 
 
-    </BrowserRouter>
+    </HashRouter>
 
   
 
