@@ -1,7 +1,7 @@
 import './App.css'
 import Course from '../src/components/courses'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { HashRouter as Router, Routes, BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 
 
 
